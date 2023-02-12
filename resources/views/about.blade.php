@@ -35,7 +35,7 @@
 	</div>
 	<div class="about_section col-12 d-flex">
 		<div class="txt_about col-6">
-			<h2>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Minus obcaecati eaque vel iste consequuntur esse tempora aspernatur expedita perferendis non nemo unde quae sequi tenetur animi et, voluptate est delectus?</h2>
+			<h2>В нашем интернет-магазине компьютерной техники "Texno Planet" вы можете преобрести различные комплектующие для ПК, периферию, а так же различные модели ноутбуков и персональных компьютеров. Наш магазин радует клиентов уже более 10 лет!</h2>
 		</div>
 		<div class="logo_about col-6">
 			<img src="/public/logo.png">
