@@ -17,10 +17,11 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <link rel="stylesheet" type="text/css" href="/resources/css/about.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/layouts.css">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/public/logo.png" alt="" sizes="" srcset="" style="width:220px">
