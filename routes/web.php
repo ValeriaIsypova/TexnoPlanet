@@ -25,4 +25,4 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contacts'])
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
-Route::get('/catalog', [App\Http\Controllers\HomeController::class, 'catalogs'])->name('catalog');
+Route::get('/catalog/{product_id}', [App\Http\Controllers\HomeController::class, 'catalogs'])->name('catalog');
