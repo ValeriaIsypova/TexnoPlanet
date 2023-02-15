@@ -24,3 +24,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contacts'])->name('contact');
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
+
+Route::get('/catalog', [App\Http\Controllers\HomeController::class, 'catalogs'])->name('catalog');
