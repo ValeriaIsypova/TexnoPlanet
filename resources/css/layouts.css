@@ -1,3 +1,7 @@
 .navbar {
     background-color: whitesmoke;
 }
+
+.nav-link {
+    font-weight: bold;
+}
