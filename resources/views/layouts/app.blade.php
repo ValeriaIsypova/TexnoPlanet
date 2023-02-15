@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/css/about.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/layouts.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/register.css">
 </head>
 <body>
     <div id="app">
