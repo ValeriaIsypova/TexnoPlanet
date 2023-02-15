@@ -1,0 +1,21 @@
+.map_section img {
+    width: 650px;
+}
+
+.info_contact {
+    position: relative;
+    left: 140px;
+    padding-top: 200px;
+}
+
+.title_contact h1 {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.info_contact img {
+    width: 155px;
+    position: relative;
+    left: 150px;
+    padding-top: 35px;
+}
