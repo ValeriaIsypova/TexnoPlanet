@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@extends('layouts.app')
-
-@section('content')
 
 <section class="catalog">
     <div class="container">
@@ -32,34 +29,8 @@
                 </div>
             </div>
         </div>
-        <div class="catalog-items ">
-            @foreach ($product as $prod)
-            <div class="catalog-item card">
-                <div class="pic-box">
-                    <img src="/public/img/{{$prod -> photo}}" alt="" class="img-fliud">
-                </div>
-                <div class="text-box">
-                    <p class="card-title mb-3">{{$prod -> title}}</p>
-                    <p class="price">{{$prod -> price}} руб.</p>
-                </div>
-                @if (Auth::user())
-                    <a href="/public/addtocart/{{$prod -> id}}" class="btn main-btn">Купить</a>
-                @else
-                <h1 class="no-auth">
-                    @if (Route::has('login'))
-                    <li class="nav-item">
-                        <a class="nav-link filter-link" href="{{ route('login') }}">Авторизоваться</a>
-                    </li>
-                @endif
-                </h1>
-                @endif
-            </div>
-            @endforeach
-        </div>
     </div>
 </section>
 
 @endsection
 
-
-@endsection
