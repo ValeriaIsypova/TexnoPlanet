@@ -40,10 +40,10 @@
                                     <a class="nav-link" href="{{ route('contact') }}">{{ __('Где нас найти') }}</a>
                                 </li>
                                 <li class="header-item">
-                                    <a href="/public/catalog" class="header-link">Каталог</a>
+                                    <a class="nav-link" href="/public/catalog" class="header-link">Каталог</a>
                                  </li>
                                 <li class="header-item">
-                                    <a href="/public/cart" class="header-link">Корзина</a>
+                                    <a class="nav-link" href="/public/cart" class="header-link">Корзина</a>
                                 </li>
                     </ul>
 
