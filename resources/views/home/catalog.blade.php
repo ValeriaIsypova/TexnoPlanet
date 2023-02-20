@@ -22,9 +22,9 @@
                     <h5 class="title sm-title">Показать:</h5>
                     <ul class="nav filter-nav">
                         <li class="filter-item"><a href="" class="filter-link">Всё</a></li>
-                        <li class="filter-item"><a href="" class="filter-link">Ноутбки</a></li>
-                        <li class="filter-item"><a href="" class="filter-link">Игровые приставки</a></li>
+                        <li class="filter-item"><a href="" class="filter-link">Ноутбуки</a></li>
                         <li class="filter-item"><a href="" class="filter-link">Геймпады</a></li>
+                        <li class="filter-item"><a href="" class="filter-link">Консоли</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +33,7 @@
             @foreach ($product as $prod)
             <div class="catalog-item card">
                 <div class="pic-box">
-                    <img src="/public/{{$prod -> photo}}" alt="" class="img-fliud">
+                    <img src="/public/img/{{$prod -> photo}}" alt="" class="img-fliud">
                 </div>
                 <div class="text-box">
                     <p class="card-title mb-3">{{$prod -> title}}</p>
@@ -57,4 +57,3 @@
 </section>
 
 @endsection
-

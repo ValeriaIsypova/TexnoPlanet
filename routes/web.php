@@ -23,5 +23,13 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contacts'])
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
-Route::get('/catalog', [App\Http\Controllers\HomeController::class, 'catalogs'])->name('catalog');
+Route::get('/catalog', [App\Http\Controllers\ProductController::class,'index']);
 
+Route::get('/addtocart/{id}', [App\Http\Controllers\ProductController::class,'addtocart']);
+Route::get('/cart', [App\Http\Controllers\ProductController::class,'cart']);
+
+Route::get('/cartadd/{id}', [App\Http\Controllers\CartController::class,'addbtn']);
+Route::get('/cartrem/{id}', [App\Http\Controllers\CartController::class,'removebtn']);
+Route::get('/cartall/{id}', [App\Http\Controllers\CartController::class,'removeall']);
+
+Route::get('/filter', [App\Http\Controllers\ProductController::class,'filter']);

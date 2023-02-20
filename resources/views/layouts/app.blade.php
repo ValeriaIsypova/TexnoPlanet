@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/layouts.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/register.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
     <div id="app">
@@ -38,8 +39,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('contact') }}">{{ __('Где нас найти') }}</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('catalog') }}">{{ __('Каталог') }}</a>
+                                <li class="header-item">
+                                    <a href="/public/catalog" class="header-link">Каталог</a>
+                                 </li>
+                                <li class="header-item">
+                                    <a href="/public/cart" class="header-link">Корзина</a>
                                 </li>
                     </ul>
 

@@ -50,11 +50,11 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'surname' => ['required', 'string', 'max:255'],
-            'patronymic' => ['required', 'string', 'max:255'],
-            'login' => ['required', 'string', 'max:255', 'unique:users'],
+            'name' => ['required', 'string', 'max:255', 'regex:/^[а-яА-ЯёЁ -]+$/iu'],
+            'surname' => ['required', 'string', 'max:255', 'regex:/^[а-яА-ЯёЁ -]+$/iu'],
+            'patronymic' => ['string', 'max:255', 'regex:/^[а-яА-ЯёЁ -]+$/iu'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'login' => ['required', 'string', 'max:255', 'unique:users', 'regex:/^[a-zA-Z0-9-]+$/iu'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
     }
@@ -69,11 +69,12 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
-            'email' => $data['email'],
             'surname' => $data['surname'],
             'patronymic' => $data['patronymic'],
+            'email' => $data['email'],
             'login' => $data['login'],
             'password' => Hash::make($data['password']),
+            'role' => 1,
         ]);
     }
 }
