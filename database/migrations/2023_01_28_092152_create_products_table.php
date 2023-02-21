@@ -24,7 +24,7 @@ return new class extends Migration
         Schema::table('products', function (Blueprint $table) {
             $table->string('country');
             $table->string('year');
-            $table->string('cat');
+            $table->string('id_cat');
         });
     }
 

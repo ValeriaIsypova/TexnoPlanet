@@ -8,12 +8,18 @@ class ProductController extends Controller
 {
     public function index() {
         $i = \App\Models\Product::Where('id', '>', 0) -> get();
-        return view('home/catalog', ["product" => $i]);
+        $j = \App\Models\Category::all();
+        return view('home/catalog', ["product" => $i, "category" => $j]);
     }
 
     public function main() {
         $i = \App\Models\Product::Where('id', '>', 0)->limit(5) -> get();
         return view('/about', ["product" => $i]);
+    }
+
+    public function getProduct($id) {
+        $product = \App\Models\Product::find($id);
+        return view('home/single-product', ["product" => $product]);
     }
 
     public function addtocart($id) {

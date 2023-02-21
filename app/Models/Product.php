@@ -10,4 +10,8 @@ class Product extends Model
     public function Cart(){
         return $this -> belongsTo(cart::class, 'product_id', 'id');
     }
+
+    public function Category(){
+        return $this -> belongsTo(cart::class, 'id', 'id_cat');
+    }
 }
