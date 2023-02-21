@@ -26,7 +26,7 @@
                         </div>
                         <p class="text price">{{$prod -> price * $prod -> count}} руб.</p>
                     </div>
-                    <a href="/public/cartall/{{$prod -> id}}" class="btn main-btn">Удалить</a>
+                    <a href="/public/cartall/{{$prod -> id}}" class="btn btn-dark">Удалить</a>
                 </div>
                 <?php $sum += $prod -> price * $prod -> count; ?>
                 @endforeach

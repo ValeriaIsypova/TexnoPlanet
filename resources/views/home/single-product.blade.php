@@ -14,7 +14,7 @@
                 <h1 class="product-name">{{ $product -> title }}</h1>
                 <div class="sell-box">
                 @if (Auth::user())
-                    <a href="/public/addtocart/{{$product -> id}}" class="btn main-btn">Купить</a>
+                    <a href="/public/addtocart/{{$product -> id}}" class="btn btn-dark">Купить</a>
                 @else
                 <h1 class="no-auth">
                     @if (Route::has('login'))

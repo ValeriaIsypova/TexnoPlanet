@@ -41,7 +41,7 @@
                         <p class="price">{{$prod -> price}} руб.</p>
                     </div>
                     @if (Auth::user())
-                        <a href="/public/addtocart/{{$prod -> id}}" class="btn main-btn">Купить</a>
+                        <a href="/public/addtocart/{{$prod -> id}}" class="btn btn-dark">Купить</a>
                     @else
                     <h1 class="no-auth">
                         @if (Route::has('login'))
