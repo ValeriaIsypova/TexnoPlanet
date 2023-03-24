@@ -38,7 +38,3 @@ Route::get('/cartall/{id}', [App\Http\Controllers\CartController::class,'removea
 Route::get('/filter', [App\Http\Controllers\ProductController::class,'filter']);
 
 Route::get('/product/{id}', [App\Http\Controllers\ProductController::class,'getProduct']);
-
-Route::post('/admin/create_category', [App\Http\Controllers\AdminController::class, 'create_category'])->name('create_cat');
-
-Route::post('/admin/create_product', [App\Http\Controllers\AdminController::class, 'create_product'])->name('create_prod');
